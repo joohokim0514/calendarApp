@@ -1,0 +1,165 @@
+body {
+	background-color: #e6e6ff;
+}
+.logindiv {
+	margin-top: 40px;
+	margin-left: 5%;
+}
+
+table,th,td {
+	background-color: white;
+	border-collapse: collapse;
+	border: 1px solid #cccccc;
+}
+td {
+	height: 80px;
+}
+h2 {
+	margin-top: -20px;
+	margin-left: 10%;
+	font-size: 20px;
+	color: #90EE90;
+}
+h3 {
+	margin-top: -57px;
+	margin-left: 20%;
+	font-size: 20px;
+	color: #E0A955;
+}
+h4 {
+	margin-top: -62px;
+	margin-left: 30%;
+	font-size: 20px;
+	color: #FF5300;
+}
+h5 {
+	margin-top: -70px;
+	margin-left: 40%;
+	font-size: 20px;
+	color: #7c7ddd;
+}
+h6 {
+	margin-top: -75px;
+	margin-left: 52%;
+	font-size: 20px;
+	color: #ff57c5;
+}
+
+
+#welcome{
+	margin-left: 20%;
+}
+#header{
+	text-decoration: none;
+	font-size: 30px;
+	color: #ffad99;
+}
+#usnmwrong {
+	color: #ff66a3;
+}
+#pswdwrong {
+	color: #ff66a3;
+}
+.calendar {
+	margin-top: 50px;
+	margin-left: auto;
+	margin-right: auto;
+}
+.caltable {
+	margin-left: 5%;
+}
+.prev {
+	text-align: left;
+	padding-left: 40px;
+}
+.prev span:hover{
+	color: #cc99ff;
+	cursor: pointer;
+}
+.next {
+	text-align: right;
+	padding-right: 40px;
+}
+.next span:hover{
+	color: #cc99ff;
+	cursor: pointer;
+}
+.week th {
+	width: 120px;
+}
+.head th{
+	border: 0px solid black;
+	height: 60px;
+}
+.weekrow td{
+	vertical-align: top;
+	padding-top: 4px;
+	padding-left: 4px;
+}
+/*.avail:hover{
+	background: rgba(0, 122, 204, 0.1);
+	cursor: pointer;
+}*/
+.empty {
+	background-color: #f2f2f2;
+}
+#eventdiv {
+	margin-top: 30px;
+	margin-left: 5%;
+	display: none;
+}
+#sharecalendardiv {
+	margin-top: 30px;
+	margin-left: 5%;
+	display: none;
+}
+#selectcategorydiv {
+	margin-top: 30px;
+	margin-left: 5%;
+}
+#eventlist {
+	margin-top: 30px;
+	margin-left: 5%;
+}
+#categorybycolor {
+	margin-left: 5%;
+	display: none;
+}
+#searcheventdiv {
+	margin-top: 30px;
+	margin-left: 5%;
+	visibility: hidden;
+}
+#searchresultdiv {
+	margin-left: 5%;
+	visibility: hidden;
+}
+
+/*button style citation: https://www.w3schools.com/css/tryit.asp?filename=trycss_buttons_basic*/
+.eventbtn{
+    border: none;
+    color: #000000;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

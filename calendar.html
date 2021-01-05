@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>index</title>
+	<link rel="stylesheet" href="calendar.css">
+	<script
+		src="https://code.jquery.com/jquery-3.3.1.min.js">
+  	</script>
+</head>
+<body>
+	<div class="logindiv">
+		<input type="text" name="username" id="usnm" placeholder="username"><span id="usnmwrong"></span>
+		<br>
+		<input type="password" name="password" id="pswd" placeholder="password"><span id="pswdwrong"></span>
+		<br>
+		<button id="login">Login</button><span id="logintext"></span>
+		<br>
+		<button id="regi">Register</button><span id="regitext"></span>
+		<br>
+		<button id='logout' hidden='true'>Log out</button>
+	</div>
+	<div id="welcome">
+		<h1 id="header"> &nbsp;</h1>
+	</div>
+
+	<div id="searcheventdiv">
+		Search event: <br>
+		<span>Event Title: </span><input type="text" name="existingeventname" placeholder="Event Title" id="eet"> 
+		<button id='searchbytitle'>Search by title</button><br>
+		<span>Start Date: &nbsp;</span><input type="date" name="existingstartdate" id="esd">
+		<button id='searchbydate'>Search by date</button><br><br>
+		Search Result:
+	</div>
+	<br>
+	<div id="searchresultdiv">
+	</div>
+
+
+	<div class="calendar">
+		<table class="caltable" id="caltable">
+
+			<tr class="head" id="headtime">
+				<th class="prev"><span id="prev">&lt;&lt;</span></th>
+				<th colspan="5"><span id="year"></span><span id="month"></span></th>
+				<th class="next"><span id="next">>></span></th>
+			</tr>
+
+			<tr class="week">
+				<th>Sunday</th>
+				<th>Monday</th>
+				<th>Tuesday</th>
+				<th>Wednesday</th>
+				<th>Thursday</th>
+				<th>Friday</th>
+				<th>Saturday</th>
+			</tr>
+		</table>
+	</div>
+
+	<div id="categorybycolor">
+		Categories:&emsp;<h2>Family</h2>&emsp;<h3>Friends</h3>&emsp;<h4>Work</h4>&emsp;<h5>Activities</h5>&emsp;<h6>Other</h6>
+	</div>
+
+	<div id="eventlist">
+		
+	</div>
+
+	<div id="eventdiv">
+		<span>Event Title: </span><input type="text" name="eventname" placeholder="Event Title" id="et"> <br>
+		<span>Category: </span><select id=list><option value="----">----</option><option value="Family">Family</option><option value="Friends">Friends
+		</option><option value="Work">Work</option><option value="Activities">Activities</option><option value="Other">Other</option></select><br>
+		<span>Start Date: &nbsp;</span><input type="date" name="startdate" id="sd">
+		<span>Hour: </span><input type="number" name="hour" min="0" max="23" step="1" placeholder="00" id="hh">
+		<span>Minute: </span><input type="number" name="minute" min="0" max="59" step="1" placeholder="00" id="mm">
+		<br>
+		<textarea name="description" rows="4" cols="25" placeholder="Event Description" id="des"></textarea>
+		<br>
+		<button id="addevent">Add Event</button><button id="updateevent">Update Event</button><button id="deleteevent">Delete Event</button>
+		<button id="initiategroupevent">Make this a group Event</button>
+			<div id="sharediv">
+			<span>Share with: </span> <input type="text" name="people" id="people" placeholder="john, peterk, mary123">(enter all usernames to share)
+			</div>
+		<button id="shareevent">Share Event</button>
+	</div>
+
+	<script src="calendar.js"></script>
+	<script src="user.js"></script>
+
+</body>
+</html>
